@@ -1,0 +1,11 @@
+<div class="card" *ngIf="estado">
+    <h1>Peru</h1>
+
+    <ul class="list-group list-group-flush" *ngFor="let peru of list">
+        <li class="list-group-item">{{peru.name}}</li>
+        <li class="list-group-item">{{peru.alpha3Code}}</li>
+        <li class="list-group-item">{{peru.capital}}</li>
+        <li class="list-group-item">{{peru.subregion}}</li>
+        <li class="list-group-item">{{peru.population}}</li>
+    </ul>
+</div>

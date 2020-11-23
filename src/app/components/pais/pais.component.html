@@ -1,0 +1,24 @@
+<div *ngIf="estadop">
+    <h1>Paises</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+
+                <th scope="col">código</th>
+                <th scope="col">nombre</th>
+                <th scope="col">Poblacion</th>
+                <th scope="col">Continente</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pais of list">
+                <th>{{pais.alpha3Code}}</th>
+                <th>{{pais.name}}</th>
+                <th>{{pais.population}}</th>
+                <th>{{pais.region}}</th>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
